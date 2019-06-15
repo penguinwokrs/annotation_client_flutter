@@ -19,11 +19,11 @@ class _AnswerFormState extends State<AnswerForm> {
               Expanded(
                 child: RaisedButton(
                   onPressed: buttonPressed,
-                  color: const Color(0xFF347ffd),
+                  color: Colors.blue,
                   child: Text(
                     "当てはまる",
                     style: TextStyle(
-                      color: const Color(0xFFe0e0e0),
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -31,8 +31,11 @@ class _AnswerFormState extends State<AnswerForm> {
               Expanded(
                 child: RaisedButton(
                   onPressed: buttonPressed,
-                  color: const Color(0xFFd13548),
-                  child: Text("当てはまらない"),
+                  color: Colors.redAccent,
+                  child: Text(
+                    "当てはまらない",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
               ),
             ]),
@@ -43,17 +46,17 @@ class _AnswerFormState extends State<AnswerForm> {
               Expanded(
                 child: RaisedButton(
                   onPressed: buttonPressed,
-                  color: const Color(0xFF6d757d),
+                  color: Colors.grey,
                   child: Text(
                     "画像が不鮮明でわからない",
-                    style: TextStyle(color: const Color(0xFFe0e0e0)),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
               ),
               Expanded(
                 child: RaisedButton(
                   onPressed: buttonPressed,
-                  color: const Color(0xFFf8bf1f),
+                  color: Colors.yellow,
                   child: Text("惜しい"),
                 ),
               ),
