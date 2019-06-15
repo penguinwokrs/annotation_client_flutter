@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:annotation_client_flutter/annotation_screen.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,29 +8,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Annotation Client',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => AnnotationScreen(),
+      },
     );
   }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return AnnotationScreen();
-  }
-
-  void buttonPressed() {}
 }
