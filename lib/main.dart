@@ -1,4 +1,4 @@
-import 'package:annotation_client_flutter/annotation_screen.dart';
+import 'package:annotation_client_flutter/pages/annotation_page/annotation_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => AnnotationScreen(),
+        '/': (context) => AnnotationPage(),
       },
     );
   }
