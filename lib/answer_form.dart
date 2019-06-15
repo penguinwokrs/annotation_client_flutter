@@ -16,61 +16,41 @@ class _AnswerFormState extends State<AnswerForm> {
           Row(children: <Widget>[
             Expanded(
               child: RaisedButton(
-                  key: null,
-                  onPressed: buttonPressed,
-                  color: const Color(0xFFe0e0e0),
-                  child: Text(
-                    "BUTTON 1",
-                    style: TextStyle(
-                        fontSize: 12.0,
-                        color: const Color(0xFF000000),
-                        fontWeight: FontWeight.w200,
-                        fontFamily: "Roboto"),
-                  )),
+                onPressed: buttonPressed,
+                color: const Color(0xFF347ffd),
+                child: Text(
+                  "当てはまる",
+                  style: TextStyle(
+                    color: const Color(0xFFe0e0e0),
+                  ),
+                ),
+              ),
             ),
             Expanded(
               child: RaisedButton(
-                  key: null,
-                  onPressed: buttonPressed,
-                  color: const Color(0xFFe0e0e0),
-                  child: Text(
-                    "BUTTON 2",
-                    style: TextStyle(
-                        fontSize: 12.0,
-                        color: const Color(0xFF000000),
-                        fontWeight: FontWeight.w200,
-                        fontFamily: "Roboto"),
-                  )),
+                onPressed: buttonPressed,
+                color: const Color(0xFFd13548),
+                child: Text("当てはまらない"),
+              ),
             ),
           ]),
           Row(children: <Widget>[
             Expanded(
               child: RaisedButton(
-                  key: null,
-                  onPressed: buttonPressed,
-                  color: const Color(0xFFe0e0e0),
-                  child: Text(
-                    "BUTTON 3",
-                    style: TextStyle(
-                        fontSize: 12.0,
-                        color: const Color(0xFF000000),
-                        fontWeight: FontWeight.w200,
-                        fontFamily: "Roboto"),
-                  )),
+                onPressed: buttonPressed,
+                color: const Color(0xFF6d757d),
+                child: Text(
+                  "画像が不鮮明でわからない",
+                  style: TextStyle(color: const Color(0xFFe0e0e0)),
+                ),
+              ),
             ),
             Expanded(
               child: RaisedButton(
-                  key: null,
-                  onPressed: buttonPressed,
-                  color: const Color(0xFFe0e0e0),
-                  child: Text(
-                    "BUTTON 4",
-                    style: TextStyle(
-                        fontSize: 12.0,
-                        color: const Color(0xFF000000),
-                        fontWeight: FontWeight.w200,
-                        fontFamily: "Roboto"),
-                  )),
+                onPressed: buttonPressed,
+                color: const Color(0xFFf8bf1f),
+                child: Text("惜しい"),
+              ),
             ),
           ]),
         ],
