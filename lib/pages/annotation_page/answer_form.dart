@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class AnswerForm extends StatefulWidget {
@@ -67,5 +68,12 @@ class _AnswerFormState extends State<AnswerForm> {
     );
   }
 
-  void buttonPressed() {}
+  Future buttonPressed() async {
+    Response res;
+
+    Dio dio = new Dio();
+    res = await dio.get(
+        "https://cdn-natgeo.nikkeibp.co.jp/atcl/gallery/111600040/ph_thumb.jpg?__scale=w:945,h:965&_sh=0603e0730e");
+    debugPrint(res.statusCode.toString());
+  }
 }
